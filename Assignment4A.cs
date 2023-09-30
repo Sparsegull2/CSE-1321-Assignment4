@@ -31,7 +31,7 @@ class Assignment4A
             dis += mph*5280/3600;
             mph -= slow ;
             time += 1;
-            if (mph < 0) break;
+            if (mph < 0) mph=0;
             if (time % sec == 0)
             {
                 if (time == 1) Console.WriteLine("At " + time + " second, you have traveled " + dis.ToString("n4") + " feet and are now moving at " + mph + " MPH.");
